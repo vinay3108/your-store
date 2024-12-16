@@ -1,40 +1,38 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
-const HeroBanner: React.FC = () => {
+interface HeroBannerProps {
+    backgroundImage: string;
+    title: string;
+    subtitle: string;
+    buttonText: string;
+}
+
+const HeroBanner: React.FC<HeroBannerProps> = ({
+    backgroundImage,
+    title,
+    subtitle,
+    buttonText,
+}) => {
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 p-8 bg-gray-50">
-            {/* Left Banner */}
-            <div className="bg-red-600 text-white p-8 rounded-lg relative">
-                <h2 className="text-4xl font-bold">Up to 30% off</h2>
-                <p className="mt-2 text-lg">Selected Smartphone Brands</p>
-                <button className="mt-6 bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition">
-                    Shop
-                </button>
-                <Image
-                    src="https://via.placeholder.com/200x300"
-                    alt="Smartphone"
-                    className="absolute bottom-0 right-4"
-                    height={200}
-                    width={300}
-                />
-            </div>
+        <section
+            className="relative flex flex-col justify-center items-start text-white px-8 py-12 m-8"
+            style={{
+                backgroundImage: `url('${backgroundImage}')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "500px", // Adjust height as needed
+            }}
+        >
+            {/* Overlay for Better Text Contrast */}
+            <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
 
-            {/* Right Banner */}
-            <div className="bg-purple-600 text-white p-8 rounded-lg relative">
-                <h2 className="text-4xl font-bold">Take Your Sound Anywhere</h2>
-                <p className="mt-2 text-lg">Top Headphone Brands</p>
-                <button className="mt-6 bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition">
-                    Shop
+            <div className="z-10 space-y-4">
+                <h2 className="text-4xl font-bold">{title}</h2>
+                <p className="text-lg">{subtitle}</p>
+                <button className="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 transition">
+                    {buttonText}
                 </button>
-                <Image
-                    src="https://via.placeholder.com/200x300"
-                    alt="Headphones"
-                    className="absolute bottom-0 right-4"
-                    height={200}
-                    width={300}
-                />
             </div>
         </section>
     );
