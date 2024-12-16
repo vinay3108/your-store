@@ -31,7 +31,8 @@ const HeroSection: React.FC = () => {
                 backgroundPosition: "bottom center",  // Centers the image within the container
                 backgroundRepeat: "no-repeat",  // Ensures the image doesn't repeat
                 height: "700px",
-                width:"100%"
+                width:"100%",
+                transition:"ease-in 1s"
             }}
         >
             <div className="relative z-10 ml-24">
