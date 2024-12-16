@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ['via.placeholder.com'], // Add 'via.placeholder.com' to the whitelist
+  },
 };
 
 export default nextConfig;
