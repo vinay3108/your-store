@@ -16,8 +16,8 @@ const HeroBanner: React.FC = () => {
                     src="https://via.placeholder.com/200x300"
                     alt="Smartphone"
                     className="absolute bottom-0 right-4"
-                    height={400}
-                    width={400}
+                    height={200}
+                    width={300}
                 />
             </div>
 
@@ -32,8 +32,8 @@ const HeroBanner: React.FC = () => {
                     src="https://via.placeholder.com/200x300"
                     alt="Headphones"
                     className="absolute bottom-0 right-4"
-                    height={400}
-                    width={400}
+                    height={200}
+                    width={300}
                 />
             </div>
         </section>

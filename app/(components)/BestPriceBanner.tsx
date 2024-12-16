@@ -12,7 +12,7 @@ const BestPriceBanner = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="w-full max-w-md lg:max-w-lg">
                 <Image
-                  src="/laptop-tablet.png" // Replace with your image path
+                  src="https://via.placeholder.com/500x300" // Replace with your image path
                   alt="Laptop and Tablet"
                   width={500}
                   height={400}
