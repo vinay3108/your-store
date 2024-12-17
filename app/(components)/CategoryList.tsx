@@ -1,39 +1,35 @@
 import React from "react";
-import Category from "../(components)/Category";
-import { FaLaptop, FaMobileAlt, FaTag, FaTabletAlt } from "react-icons/fa";
+import CategoryCard from "./CategoryCard";
 
 const CategoryList: React.FC = () => {
     return (
-        <div className="grid grid-cols-5 gap-4 p-8">
-            <Category
-                title="Computers"
-                icon={
-                    <FaLaptop className="text-2xl text-white bg-blue-500 rounded-full p-2" />
-                }
-                href="/computers"
-            />
-            <Category
-                title="Mobile"
-                icon={
-                    <FaMobileAlt className="text-2xl text-white bg-green-500 rounded-full p-2" />
-                }
-                href="/mobile"
-            />
-            <Category
-                title="Sale"
-                icon={
-                    <FaTag className="text-2xl text-white bg-red-500 rounded-full p-2" />
-                }
-                href="/sale"
-            />
-            <Category
-                title="Tablets"
-                icon={
-                    <FaTabletAlt className="text-2xl text-white bg-purple-500 rounded-full p-2" />
-                }
-                href="/tablets"
-            />
-        </div>
+        <>
+            <h2 className="text-3xl font-bold text-center mb-6">
+                Shop by Category
+            </h2>
+            <div className="grid grid-cols-5 gap-4 p-8">
+                <CategoryCard
+                    title="Computers"
+                    image="/images/mobile6-r.png"
+                />
+                <CategoryCard
+                    title="Computers"
+                    image="/images/mobile6-r.png"
+                />
+                <CategoryCard
+                    title="Computers"
+                    image="/images/mobile6-r.png"
+                />
+                <CategoryCard
+                    title="Computers"
+                    image="/images/mobile6-r.png"
+                />
+                <CategoryCard
+                    title="Computers"
+                    image="/images/mobile6-r.png"
+                />
+            </div>
+        </>
     );
 };
 
