@@ -14,7 +14,7 @@ const products = [
         name: "In-ear Noise Cancelling & Isolating Wireless Earbuds",
         priceOld: "$85.00",
         priceNew: "$70.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile3.png",
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const products = [
         name: 'JP - Space Tablet 10.4" Wi-Fi 32GB',
         priceOld: "$85.00",
         priceNew: "$70.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile5.jpg",
     },
     {
         id: 3,
@@ -30,15 +30,15 @@ const products = [
         name: 'Ocean Pro 11 - 12.3" Touch Screen',
         priceOld: "$85.00",
         priceNew: "$70.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile6.jpg",
     },
     {
         id: 4,
         label: "",
         name: 'Shel 50" Class LED 4K UHD Smart TV',
-        priceOld: "",
+        priceOld: "$90.00",
         priceNew: "$85.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile7.jpg",
     },
     {
         id: 5,
@@ -46,7 +46,7 @@ const products = [
         name: "Fitboot Inspire Fitness Tracker With Heart Rate Tracking",
         priceOld: "$85.00",
         priceNew: "$70.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile8.png",
     },
     {
         id: 6,
@@ -54,7 +54,7 @@ const products = [
         name: "Smartphone Z Pixel Max 128GB Unlocked",
         priceOld: "$85.00",
         priceNew: "$70.00",
-        image: "https://via.placeholder.com/150",
+        image: "/images/mobile9.jpg",
     },
 ];
 
@@ -66,7 +66,7 @@ const BestSellers: React.FC = () => {
             </h2>
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
-                spaceBetween={20}
+                spaceBetween={30}
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
